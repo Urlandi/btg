@@ -1,9 +1,9 @@
 ### Backup regular files
 
-Arc and compress files from list of directories by <b>tar</b>. Puts arc file to remote host with <b>md5</b> checksum file by <b>scp</b> to home directory. Checking files on server side and notify administrator about errors.
+Arc and compress files from list of directories by <b>tar</b>. Puts arc file to remote host with <b>md5</b> checksum file by <b>scp</b> to home directory. Checking files on server side and notify administrator about errors. Used TCL and Expect.
 
 #### Edit config file 
-<i>/usr/local/etc/btg[s|l].conf</i> (default). If it not exist you will have to create it.
+<i>/usr/local/etc/btg[s|l].conf</i> (default). If it not exist you will have to create it or specify other location by command argument.
 
  - set backup_dir {/dir/for/backup/1;/dir/for/backup/2; ... ;/dir/for/backup/n} - which directories backuped
  - set skip_dir {/skip/dir/1;/skip/dir/2; ... ;/skip/dir/n} - which directories excluded from backup
@@ -30,7 +30,7 @@ skip any options for default use
 
 Run <i>btg[s|l].ex [/config/file]</i>
 
- - btg.ex - regular script for backup
- - btgl.ex - only local copies
- - btgs.ex - script on server side. Crontab job must be performed after receiving all backup files from remote hosts.
+ - [btg.ex](btg.ex) - regular script for backup
+ - [btgl.ex](btgl.ex) - only local copies
+ - [btgs.ex](btgs.ex) - script on server side. Crontab job must be performed after receiving all backup files from remote hosts.
 
