@@ -1,6 +1,6 @@
 ### Backup regular files
 
-Arc and compress files from list of directories by <b>tar</b>. Puts arc file to remote host with <b>md5</b> checksum file by <b>scp</b>. Checking files on server side and notify administrator about errors.
+Arc and compress files from list of directories by <b>tar</b>. Puts arc file to remote host with <b>md5</b> checksum file by <b>scp</b> to home directory. Checking files on server side and notify administrator about errors.
 
 #### Edit config file 
 <i>/usr/local/etc/btg[s|l].conf</i> (default). If it not exist you will have to create it.
