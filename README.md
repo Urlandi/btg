@@ -11,17 +11,17 @@ Arc and compress files from list of directories by <b>tar</b>. Puts arc file to 
  - set local_copy {7} - the number of local copies. Early copies are deleted.
  - set pack_arc {1} - archive will be compressed
 
-------
+-
  - set server_host {backup.host} - remote hostname for backup
  - set server_usr {login} - remote hostname login
  - set server_pass {password}  - remote hostname password
  - set server_port {22} - remote hostname tcp port
 
-------  
+-  
  - set server_prompt {[Pp]assword:} - remote hostname promt password
  - set server_wait {600} - server time connection wait
 
-------
+-
  - set notify_email {root@} - email for notify and error messages
 
 skip any options for default use
