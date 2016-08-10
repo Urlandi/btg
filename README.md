@@ -17,7 +17,7 @@ Arc and compress files from list of directories by <b>tar</b>. Puts arc file to 
  - set server_pass {password}  - remote hostname password
  - set server_port {22} - remote hostname tcp port
 
--  
+-
  - set server_prompt {[Pp]assword:} - remote hostname promt password
  - set server_wait {600} - server time connection wait
 
